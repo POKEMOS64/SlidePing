@@ -48,8 +48,8 @@ $rem-with-px-fallback: true !global;
     @include establish-baseline;
 }
 @media only screen and(min-width:1157px) and (max-width:1460px) {
-    $base-font-size: 16px!global;
-    $base-line-height: 19px!global;
+    $base-font-size: 14px!global;
+    $base-line-height: 16px!global;
     $rhythm-unit: "rem";
     $grid-background-baseline-color: rgba(110, 110, 110, 0.65);
     @include establish-baseline;
@@ -72,7 +72,14 @@ a,button{
 }
 button{
 	&:hover{
-		opacity: .8;
+		opacity: .5;
+		cursor: pointer;
+	}
+}
+input[type='submit']{
+	&:hover{
+		opacity: .5;
+		cursor: pointer;
 	}
 }
 a{

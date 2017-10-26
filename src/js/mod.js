@@ -48,7 +48,10 @@ $('.next').click( function(){
 
 $(function(){
   $('.red_tab_b').click(function(){
-    $('.popup,.popup_overlay').fadeIn(400); //показываем всплывающее окно
+    $('.popup.login,.popup_overlay').fadeIn(400); //показываем всплывающее окно
+  });
+	$('.cart').click(function(){
+    $('.popup.cart,.popup_overlay').fadeIn(400); //показываем всплывающее окно
   });
 	$('.click').click(function(){
     $('.popup_overlay_three').fadeIn(400); //показываем всплывающее окно
@@ -80,3 +83,28 @@ $(function(){
 	$('#pull').fadeIn(400);
   });
 });
+
+//Прибавление ----Вычетание
+jQuery(document).ready(function($) {
+        $(document).ready(function() {
+            $('.minus').click(function () {
+				
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+             });
+             $('.plus').click(function () {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+        });
+		
+		 });
+
+//Прибавление ----Вычетание
+

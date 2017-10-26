@@ -26,6 +26,13 @@
   border-radius: 14px;
   background-size: 40%;
   border: 3px solid #2c354a;
+	&.login{
+		background: transparent !important;
+		border: 0;
+	}
+	&.cart{
+		
+	}
 }
 .popup input[type="text"] {
 	@include adjust-font-size-to(0.8rem);
