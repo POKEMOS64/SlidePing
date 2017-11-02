@@ -11,275 +11,149 @@ $susy: (
 
 .middle{
 	//background: white susy-svg-grid() ;
-	width: span(12);
-	margin: 0 ;
-
-	
-	@media(max-width:960px){
-		width: span(12);
+	//width: span(8.6);
+	//max-width: 1366px;
+	margin: 0 auto;
+	//overflow-x: hidden;
+	//overflow-y: auto;
+@media(max-width:1400px){
+		//width: span(12);
 	}
 }
 
+//header
 header{
+	.middle{
+		>div{
+			@media(max-width:960px){
+				width: span(5);
+				margin: 0 auto;
+			}
+			@media(max-width:480px){
+				width: 100%;
+			}
+		}
+	}
+}
+.header_logo_box{
+	margin: 0 gutter(of 1)/3.6;
+}
+.header_info_box{
+	width: span(3);
+	margin-right: span(4%);
+}
+.header_social{
+	width:span(12);
+}
+.header_social a{
+	//width: span(4);
+	margin:0 gutter(1)/12;
+}
+.header_price{
 	width: span(12);
-	margin: 0;
-	.h_block_top{
+	a{
 		width: span(12);
-		&>div{
-			width:  span(3.2);
-			margin: 0 4.5rem 0 0;
+		padding-left: gutter(0);
+	}
+}
+//header
+//main
+main{
+	.standart{
+		h2{
+			width: span(12);
+			//margin-left:  gutter(6)*12;
+		}
+		article{
+			&:nth-child(1){
+				width: span(8.1);
+			}
+			&:nth-child(2){
+				width: span(25.44068%);
+				padding-left: span(4.38983%);
+				background-image: url(../../img/line_top.png);
+				background-position: 5% center;
+				background-size: auto;
+				background-repeat: no-repeat;
+				padding-top: 5rem !important;
+				h3{
+					width: auto;
+				}
+			}
+			.index_news{
+				>div{
+					padding-right: gutter(of .5)*12/10;
+				}
+			}
+			div[class*='text_box']{
+				//padding-left: gutter(6)*12;
+				
+				div{
+					width: span(60.62712%);
+					margin-top: 0.8rem;
+					@media(max-width:480px){
+						width: span(11);
+					}
+				}
+			}
+			img{
+				//margin: 0 0 0 gutter(of 6)*12/12;
+				margin-left: 5rem;
+				width: span(29.20339%);
+			}
+		}
+		.middle{
+			@media(max-width:960px){
+				article{
+					width: span(11);
+					&:nth-child(2){
+						background-image: none;
+						background: #fff;
+					}
+					.index_news{
+						width: span(10);
+						margin-left: span(1);
+					}
+				}
+			}
+		}
+	}
+	.click_button{
+		a{
+			width: span(2.5);
 			@media(max-width:960px){
 				width: span(12);
-				margin: 0;
-				
-			}
-			a{
-				width: span(45%);
-				&.abottom{
-					width: span(35%);
-				}
+				margin: 1rem;
 			}
 		}
+		
 	}
-	.h_block_middle{
-		&>img{
-			width: span(2.65);
-			margin: 0;
-			float: left;
-			@media(max-width:960px){
-				width: span(6);
-				margin: 0 auto;
-			}
-		}
-		&>div{
-			width: span(3.1);
-			margin: 0 4.8rem 0 0;
-			@media(max-width:960px){
-				width: span(40%);
-				margin: auto 60px auto 0;
-				button{
-					
-				}
-			}
-			& button{
-				width: span(5);
-				margin: gutter() *2;
-			}
-			& .user_name{
-				width: span(5);
-				margin: gutter() *2;
-			}
-		}
-	}
-	.h_block_navi{
-		width: span(12);
-		ul{
-			width: span(12);
-			
-			li{
-				width: span(3);
-				margin: 0;
-				a{
-					width: span(12);
-				}
-			}
-			@media(max-width:960px){
-				li{
-					width: span(3);
-					margin: 0;
-				}
-			}
-		}
-	}
-	
 }
-main{
-	.section{
-		&.tab{
-			width: span(100%);
-			&.dostavka{
-				& .middle{
-					&>.red_tab_b{
-						width: span(10);
-						margin: 0 auto;
-					}
-				}
+//main
+//footer
+footer{
+	.middle{
+		>div{
+			@media(max-width:1110px){
+				width: span(12);
 			}
-			& .t-1-info-block{
-				width: span(3.1);
-				&.right{
-					float: right;
-					margin: 0 span(1) 0 0;
-					@media(max-width:960px){
-						margin: 0 auto !important;
-					}
+		}
+		.footer_info_box{
+			>div{
+				a{
+					width: span(90%);
 				}
-				&.left{
-					float: left;
-					text-align: left;
-					margin: 0 0 0 span(1);
-					@media(max-width:960px){
-						margin: 0 auto !important;
-					}
-				}
-				& .t-1-forma{
-					width: span(12);
-					.span-one{
-						.name{
-							width: span(11.95);
-							//margin-right: span(0.1);
-						}
-						input{
-							width: span(12);
-							//margin-right: span(0);
-						}
-					}
-					button{
-						width: span(12);
-						//margin-right: span(0.4);
-					}
-				}
-				& .forma_post{
-					margin: span(0.5) 0 0 span(1.3);
-					div{
-						margin: span(0.5) 0;
-						.lable{
-							
-						}
-						input{
-							width: span(11.05);
-							padding: gutter() span(0.5);
-						}
-						textarea{
-							width: span(12);
-						}
-					}
-					button{
-						width: span(12);
-						box-sizing: content-box;
-					}
-					@media(max-width:960px){
-						margin:gutter()*2;
-					}
-						
-				}
-				& .info_text_forma_post{
-					margin-left: span(1);
-				}
-				& .contact{
-					div{
-						width: span(12);
-					}
-					img{
+				@media(max-width:1110px){
+					//width: span(12);
+					a{
 						width: auto;
 					}
-					button{
-						width: span(12);
-						box-sizing: content-box;
-						@media(max-width:960px){
-							margin: gutter()/2;
-							width: span(11.1);
-							
-						}
-					}
-				}
-				
-				@media(max-width:960px){
-					width: span(12);
-					margin: 0 !important;
-					float: none;
-					
-				}
-			}
-		}
-		&.catalog_text{
-				& .tab_text_info_block{
-					width: span(12);
-					margin: 0 auto;
-					& [class|='block']{
-						width: span(5.5);
-						& .tab_text{
-							width: span(12);
-						}
-					}
-					& .info_block{
-						&_text-img{
-							
-						}
-						&_text{
-							width: span(5);
-							@media(max-width:960px){
-								width: span(12);
-							}
-						}
-						&_img{
-							width: span(5);
-							@media(max-width:960px){
-								width: span(12);
-							}
-						}
+					br{
+						display: none;
 					}
 				}
 			}
-	}
-	.check{
-			position: fixed;
-			top: 0;
-			bottom: 0;
-		  top: 25vh;
-			left: 0;
-			right: 0;
-			margin: 5% auto 0;
-			width: span(3);
-			@media(max-width:960px){
-				width: span(8);
-				margin: 0 auto;
-				padding: 0;
-			}
-			@media(min-width:1930px){
-				width: span(3.2);
-				margin: 3% auto 0;
-			}
-		}
-}
-.footer{
-	width: span(12);
-	.footer_navi{
-		width: span(10);
-		@media(max-width:960px){
-			width: span(12);
-		}
-	}
-	.footer_post{
-		width: span(3);
-		float: right;
-		input{
-			width: span(6);
-		}
-		button{
-				width: span(6);
-			
-			}
-		@media(max-width:960px){
-			width: span(12);
 		}
 	}
 }
-.click{
-	width: span(10);
-	margin: 0 auto;
-}
-.next{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom:0;
-	margin-top: -1rem;
-	& img{
-		width: 3%;
-		margin: 0 auto;
-		@media(max-width:960px){
-			width: 10%;
-		}
-	}
-}
+//footer
