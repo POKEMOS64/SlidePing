@@ -18,16 +18,16 @@ $rem-with-px-fallback: true !global;
 @include establish-baseline;
 //Под разное разрешение экранов
 @media only screen and(min-width:240px) and (max-width:480px) {
-    $base-font-size: 10px!global;
-    $base-line-height: 12px!global;
+    $base-font-size: 12px!global;
+    $base-line-height: 14px!global;
     $rhythm-unit: "rem";
     $grid-background-baseline-color: rgba(110, 110, 110, 0.65);
     @include establish-baseline;
 }
 
 @media only screen and(min-width:480px) and (max-width:760px) {
-    $base-font-size: 8px!global;
-    $base-line-height: 12px!global;
+    $base-font-size: 12px!global;
+    $base-line-height: 14px!global;
     $rhythm-unit: "rem";
     $grid-background-baseline-color: rgba(110, 110, 110, 0.65);
     @include establish-baseline;
